@@ -9,19 +9,29 @@ import java.util.Random;
  */
 public class MyTest5 {
     public static void main(String[] args) {
-        System.out.println(MyChild5.b1);
+        System.out.println(MyGrandpa.thread);
     }
 }
 
 interface MyParent5 {
 
-    public static int a = 5;
-    public static int a1 = new Random().nextInt(2);
+    public static Thread thread = new Thread() {
+        {
+            System.out.println("MyParent5 invoked");
+        }
+    };
 
 }
 
-interface MyChild5 extends MyParent5 {
-    public static final int b = 6;
-
-    public static final int b1 = new Random().nextInt(2);
+interface MyGrandpa{
+    public static Thread thread = new Thread() {
+        {
+            System.out.println("MyGrandpa invoked");
+        }
+    };
 }
+
+interface MyChild5 extends MyGrandpa {
+    public static int b = 5;
+}
+

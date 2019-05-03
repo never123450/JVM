@@ -41,3 +41,4 @@ class MyChild1 extends MyPaernt1 {
         System.out.println("MyChild1 static block");
     }
 }
+
