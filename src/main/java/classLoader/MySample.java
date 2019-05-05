@@ -6,5 +6,6 @@ public class MySample {
 
         new MyCat();
 
+        System.out.println("from MySample: " + MyCat.class);
     }
 }

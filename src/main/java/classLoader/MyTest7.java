@@ -9,6 +9,10 @@ public class MyTest7 {
         System.out.println(clazz2.getClassLoader());//sun.misc.Launcher$AppClassLoader@18b4aac2
 
     }
+
+    public MyTest7(){
+
+    }
 }
 
 class C{

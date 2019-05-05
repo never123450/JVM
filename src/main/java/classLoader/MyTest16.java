@@ -79,6 +79,9 @@ public class MyTest16 extends ClassLoader {
         return data;
     }
 
+    public MyTest16(ClassLoader classLoader){
+        super(classLoader);
+    }
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         MyTest16 loader1 = new MyTest16("loader1");
 //        loader1.setPath("/Users/xuwenyan/Downloads/study/jvm/target/classes");
