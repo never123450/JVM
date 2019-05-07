@@ -40,4 +40,5 @@ public class MyTest24 {
         System.out.println(Thread.currentThread().getContextClassLoader());
         System.out.println(Thread.class.getClassLoader());
     }
+
 }
